@@ -17,6 +17,7 @@ class Player(body: Body,
 
     val inputs = HashMap<MovementDirection, Boolean>()
 
+    // Sets velocity according to input
     fun move() {
         inputs.forEach {
             when (it.key) {
